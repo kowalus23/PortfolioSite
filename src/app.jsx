@@ -4,7 +4,7 @@ import './scss/main.scss';
 
 class App extends React.Component {
   render(){
-    return (<div>Osdfsdfdfkfdfdsdf fsdfsdfsdfd  dgdfdfgdfgdfgfscvcvcv dfsdfds sdfsdf dfsdffd sdfsdfsdfsdfdssd asdsdfsdfsdsd sd asass fsdfsdf</div>)
+    return (<div>Testing</div>)
   }
 }
 document.addEventListener('DOMContentLoaded', function(){

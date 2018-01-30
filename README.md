@@ -1,6 +1,6 @@
 # PortfolioSite
 
-> Website with game, ending course project
+> Website that keeps my projects (Portfolio)
 
 ## Build Setup
 

@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './scss/main.scss';
+import {Container} from "./Website/container.jsx";
 
 class App extends React.Component {
   render(){
-    return (<div>Testing</div>)
+    return (
+        <Container/>
+    )
+
   }
 }
 document.addEventListener('DOMContentLoaded', function(){

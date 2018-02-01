@@ -1,3 +1,156 @@
-body {
-  background-color: tomato;
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,900&subset=latin-ext');
+
+$opacity: 0;
+
+* {
+  box-sizing: border-box;
+  outline-color: black;
 }
+
+body {
+  width: auto;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: 'Nunito Sans', sans-serif;
+
+  .page-container {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f0f0+0,f0f0f0+50,ffffff+50,ffffff+100 */
+    background: #f0f0f0; /* Old browsers */
+    background: -moz-linear-gradient(left, #f0f0f0 0%, #f0f0f0 50%, #ffffff 50%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #f0f0f0 0%, #f0f0f0 50%, #ffffff 50%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #f0f0f0 0%, #f0f0f0 50%, #ffffff 50%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#ffffff', GradientType=1); /* IE6-9 */
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content-container {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f0f0+0,f0f0f0+50,ffffff+50,ffffff+100 */
+      background: #f0f0f0; /* Old browsers */
+      background: -moz-linear-gradient(right, #f0f0f0 0%, #f0f0f0 50%, #ffffff 50%, #ffffff 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(right, #f0f0f0 0%, #f0f0f0 50%, #ffffff 50%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to left, #f0f0f0 0%, #f0f0f0 50%, #ffffff 50%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#ffffff', GradientType=1); /* IE6-9 */
+      width: 90vw;
+      height: 70vh;
+      background-color: tomato;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 1px 1px 10px darkgray;
+
+      .margin-container {
+        width: 97%;
+        height: 94%;
+        border: 1px dotted black;
+        display: flex;
+
+        .col1-2 {
+          width: 100%;
+          border: 1px dotted tomato;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .title {
+            border: 1px dotted green;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+
+            h1 {
+              font-size: 7vw;
+              border: 1px dotted green;
+              margin: 120px 0 0 0;
+              font-family: 'Nunito Sans', sans-serif;
+              font-weight: 700;
+
+              span {
+                color: red;
+              }
+              sup {
+                font-size: 1vw;
+                font-weight: 400;
+              }
+
+            }
+            h2 {
+              border: 1px dotted green;
+              font-size: 2vw;
+              margin-top: 0;
+              color: #404040;
+              font-weight: 400;
+              padding-bottom: 120px;
+              letter-spacing: 1px;
+
+              span {
+                color: red;
+              }
+            }
+            button {
+              width: 30%;
+              height: 5vh;
+              padding: 5px 0;
+              background-color: red;
+              border: 1px solid red;
+              display: flex;
+              justify-content: space-between;
+              font-size: 0.6vw;
+
+
+              &:hover {
+                background-color: black;
+                border: 1px solid black;
+                box-shadow: 2px 5px 4px #c0c0c0;
+
+                :last-child {
+                  color: red;
+                  transition: 500ms;
+
+                }
+              }
+
+              :first-child {
+                margin-left: 10px;
+                color: white;
+              }
+
+              :last-child {
+                margin-right: 10px;
+                color: white;
+              }
+            }
+
+            div {
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              height: 5%;
+              width: 30%;
+              font-size: 1em;
+              border: 1px dotted purple;
+              margin-top: 30px;
+            }
+
+          }
+        }
+
+        .menu {
+
+          h1 {
+            font-size: 7vw;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
+

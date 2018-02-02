@@ -1,12 +1,19 @@
 import React from 'react';
+import {Typer} from "./typer.jsx";
 
 export class Title extends React.Component {
     render() {
         return (
             <div className="col1-2 col1">
+                <div className="signature">
+                    <p>Patryk Kowalski</p>
+                </div>
                 <div className="title">
                     <h1>Portfolio<span>.</span><sup>2018</sup></h1>
-                    <h2>it<span>'</span>s coding time<span>!</span></h2>
+                    <h2><Typer strings={[
+                        'Welcome on my webiste :)',
+                        'It\'s coding time!',
+                    ]}/></h2>
                     <button><p>CONTACT ME</p><p>-></p></button>
                     <div className="fav-icons">
                         <a href="https://www.facebook.com/kowalus23" target="_blank">

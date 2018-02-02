@@ -45,26 +45,45 @@ body {
       .margin-container {
         width: 99%;
         height: 98%;
-        border: 1px dotted black;
+        //border: 1px dotted black;
         display: flex;
 
         .col1-2 {
           width: 100%;
-          border: 1px dotted tomato;
+          //border: 1px dotted tomato;
           display: flex;
           justify-content: center;
           align-items: center;
+        }
+
+        .col1 {
+          flex-direction: column;
+
+          .signature{
+            display: flex;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            align-self: end;
+
+            p {
+              font-size: 10px;
+              margin: 0;
+              padding: 0;
+            }
+          }
 
           .title {
-            border: 1px dotted green;
+            //border: 1px dotted green;
             display: flex;
             flex-direction: column;
             align-items: center;
             height: 100%;
+            //border: 1px dotted tomato;
 
             h1 {
               font-size: 7vw;
-              border: 1px dotted green;
+              //border: 1px dotted green;
               margin: 120px 0 0 0;
               font-family: 'Nunito Sans', sans-serif;
               font-weight: 700;
@@ -79,16 +98,16 @@ body {
 
             }
             h2 {
-              border: 1px dotted green;
+              //border: 1px dotted green;
               font-size: 2vw;
               margin-top: 0;
               color: #404040;
               font-weight: 400;
-              padding-bottom: 140px;
+              padding-bottom: 15vh;
               letter-spacing: 1px;
 
               span {
-                color: red;
+                color: #6a6a6a;
               }
             }
             button {
@@ -96,14 +115,14 @@ body {
               height: 50px;
               padding: 5px 0;
               background-color: red;
-              border: 1px solid red;
+              //border: 1px solid red;
               display: flex;
               justify-content: space-between;
               font-size: 10px;
 
               &:hover {
                 background-color: black;
-                border: 1px solid black;
+                //border: 1px solid black;
                 box-shadow: 2px 5px 4px #c0c0c0;
 
                 :last-child {
@@ -191,5 +210,32 @@ body {
 
   }
 
+}
+
+
+
+
+
+////////////////////////////// ADDITIONALS ///////////////////////
+
+.typed-cursor{
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+}
+@keyframes typedjsBlink{
+  50% { opacity: 0.0; }
+}
+@-webkit-keyframes typedjsBlink{
+  0% { opacity: 1; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1; }
+}
+.typed-fade-out{
+  opacity: 0;
+  transition: opacity .25s;
+  -webkit-animation: 0;
+  animation: 0;
 }
 

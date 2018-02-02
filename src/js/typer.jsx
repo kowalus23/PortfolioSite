@@ -2,14 +2,14 @@
 import React from "react";
 import Typed from "typed.js";
 
-export class TypedReact extends React.Component {
+export class Typer extends React.Component {
 
     componentDidMount() {
         const {strings} = this.props;
         const options = {
             strings: strings,
-            typeSpeed: 65,
-            backSpeed: 35
+            typeSpeed: 50,
+            backSpeed: 50
         };
         this.typed = new Typed(this.el, options);
     }

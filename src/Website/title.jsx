@@ -8,9 +8,12 @@ export class Title extends React.Component {
                     <h1>Portfolio<span>.</span><sup>2018</sup></h1>
                     <h2>it<span>'</span>s coding time<span>!</span></h2>
                     <button><p>CONTACT ME</p><p>-></p></button>
-                    <div className="fav-icons"> fav icons </div>
+                    <div className="fav-icons">
+                        <div className="fb-icon icon-list"/>
+                        <div className="in-icon icon-list"/>
+                        <div className="git-icon icon-list"/>
+                    </div>
                 </div>
-
             </div>
         )
     }

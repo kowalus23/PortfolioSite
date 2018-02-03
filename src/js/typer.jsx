@@ -8,8 +8,8 @@ export class Typer extends React.Component {
         const {strings} = this.props;
         const options = {
             strings: strings,
-            typeSpeed: 50,
-            backSpeed: 50
+            typeSpeed: 55,
+            backSpeed: 55
         };
         this.typed = new Typed(this.el, options);
     }

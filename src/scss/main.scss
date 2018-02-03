@@ -26,6 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 
     .content-container {
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f0f0+0,f0f0f0+50,ffffff+50,ffffff+100 */
@@ -40,13 +41,16 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 1px 1px 10px darkgray;
+      //box-shadow: 1px 1px 10px darkgray;
+      z-index: 1;
 
       .margin-container {
         width: 99%;
         height: 98%;
         //border: 1px dotted black;
         display: flex;
+        z-index: 1;
+
 
         .col1-2 {
           width: 100%;
@@ -238,4 +242,41 @@ body {
   -webkit-animation: 0;
   animation: 0;
 }
+
+
+// Box-Shadow //
+
+.shadow
+{
+  position:relative;
+  -webkit-box-shadow:0 2px 10px rgba(0, 0, 0, 0.5), 0 0 50px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow:0 2px 10px rgba(0, 0, 0, 0.5), 0 0 50px rgba(0, 0, 0, 0.2) inset;
+  box-shadow:0 2px 10px rgba(0, 0, 0, 0.5), 0 0 50px rgba(0, 0, 0, 0.2) inset;
+}
+.shadow:before, .shadow:after
+{
+  content:"";
+  position:absolute;
+  z-index: 0;
+  -webkit-box-shadow:0 0 100px rgba(0,0,0,0.8);
+  -moz-box-shadow:0 0 100px rgba(0,0,0,0.8);
+  box-shadow:0 0 100px rgba(0,0,0,0.8);
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  -moz-border-radius:0 / 10px;
+  border-radius:0 / 10px;
+}
+.shadow:after
+{
+  right:10px;
+  left:auto;
+  -webkit-transform:skew(8deg) rotate(3deg);
+  -moz-transform:skew(8deg) rotate(3deg);
+  -ms-transform:skew(8deg) rotate(3deg);
+  -o-transform:skew(8deg) rotate(3deg);
+  transform:skew(8deg) rotate(3deg);
+}
+
 

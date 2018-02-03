@@ -18,7 +18,7 @@ module.exports = {
     compress: true,
     hot: true,
     inline: true,
-    port: 9002
+    port: 9004
   },
   module: {
     rules: [
@@ -63,4 +63,4 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new ExtractTextPlugin('style.css')
   ]
-}
+};

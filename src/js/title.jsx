@@ -11,7 +11,7 @@ export class Title extends React.Component {
                 <div className="title">
                     <h1>Portfolio<span>.</span><sup>2018</sup></h1>
                     <h2><Typer strings={[
-                        'Welcome on my webiste :)',
+                        'Welcome on my website :)',
                         'It\'s coding time!',
                     ]}/></h2>
                     <button><p>CONTACT ME</p><p>-></p></button>

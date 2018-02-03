@@ -5,7 +5,7 @@ import {Menu} from "./menu.jsx";
 export class MainPage extends React.Component {
     render(){
         return(
-            <div className="content-container">
+            <div className="content-container shadow">
                 <div className="margin-container">
                     <Title/>
                     <Menu/>

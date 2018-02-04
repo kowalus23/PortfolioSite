@@ -1,6 +1,7 @@
 import React from 'react';
 import {Typer} from "./typer.jsx";
 
+
 export class Title extends React.Component {
     render() {
         return (

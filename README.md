@@ -14,6 +14,4 @@ npm run dev
 # build for production with minification
 npm run build
 
-# if neccessary, additional plugin used:
-npm install typed.js
 ```

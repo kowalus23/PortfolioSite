@@ -15,7 +15,7 @@ export class Menu extends React.Component {
                             <Link to="/portfolio"><button className="projects-btn"><span>PROJECTS</span></button></Link>
                         </div>
                         <div>
-                            <Link to="/form"><button className="ask-btn"><span>ASK</span></button></Link>
+                            <Link to="/form"><button className="ask-btn"><span>ASK ME</span></button></Link>
                         </div>
                     </div>
                     <div className="menu-col2">

@@ -21,7 +21,7 @@ export class Form extends React.Component {
                                 <label>Email <span className="required">*</span></label>
                                 <input type="email" name="field3" className="field-long" placeholder="example@test.pl"/>
                             </li>
-                            <li>
+                            <li className="form-style-sub">
                                 <label>Subject</label>
                                 <select name="field4" className="field-select">
                                     <option value="Advertise">Offer / cooperation</option>
@@ -34,8 +34,8 @@ export class Form extends React.Component {
                                 <textarea className="field5 field-long field-textarea" id="field5"
                                           placeholder="Write text here..."/>
                             </li>
-                            <li>
-                                <input type="submit" value="Submit"/>
+                            <li className="retardos">
+                                <input type="submit" value="Submit" className="retardos-child"/>
                             </li>
                         </ul>
                     </form>

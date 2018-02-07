@@ -2,6 +2,7 @@ import React from 'react';
 import {Router, Route, Link, IndexLink, IndexRoute, hashHistory} from 'react-router';
 
 
+
 export class About extends React.Component {
     render() {
         return (
@@ -23,7 +24,7 @@ export class About extends React.Component {
                 </div>
                 <div className="return-btn">
                     <Link to="/">
-                        <button>RETURN</button>
+                        <button><span>RETURN</span></button>
                     </Link>
                 </div>
                 <div className="skills-about">

@@ -34,8 +34,10 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "lodash.range": "^3.2.0",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-motion": "^0.5.2",
     "react-reveal-text": "^0.1.1",
+    "react-router-page-transition": "^3.0.2",
     "typed.js": "^2.0.6"
   }
 }

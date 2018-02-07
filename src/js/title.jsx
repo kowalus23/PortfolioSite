@@ -1,8 +1,22 @@
 import React from 'react';
 import {Typer} from "./typer.jsx";
+import {Popup} from "./popupform.jsx";
 
 
 export class Title extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            showPopup: false
+        };
+    }
+
+    togglePopup() {
+        this.setState({
+            showPopup: !this.state.showPopup
+        });
+    }
+
     render() {
         return (
             <div className="col1-2 col1">
@@ -15,7 +29,10 @@ export class Title extends React.Component {
                         'Welcome on my website :)',
                         'It\'s coding time!',
                     ]}/></h2>
-                    <button><p>CONTACT ME</p><p>-></p></button>
+                    <div className="popup-wrapper">
+                        <button onClick={this.togglePopup.bind(this)}><p>CONTACT ME</p><p>-></p></button>
+                        {this.state.showPopup ? <Popup text='FORM' closePopup={this.togglePopup.bind(this)}/> : null}
+                    </div>
                     <div className="fav-icons">
                         <a href="https://www.facebook.com/kowalus23" target="_blank">
                             <div className="fb-icon icon-list"/>

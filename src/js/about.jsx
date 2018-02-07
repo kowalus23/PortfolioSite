@@ -9,8 +9,8 @@ export class About extends React.Component {
             <div className="about">
                 <div className="title-about">
                     <p>
-                        <span data-text="O">O</span><span data-text=""/><span data-text="M">M</span><span
-                        data-text="N">N</span><span data-text="I">I</span><span data-text="E">E</span>
+                        <span data-text="A">A</span><span data-text="B">B</span><span
+                        data-text="O">O</span><span data-text="U">U</span><span data-text="T">T</span>
                     </p>
                 </div>
                 <div className="text-about">

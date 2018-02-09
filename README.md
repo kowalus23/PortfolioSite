@@ -21,6 +21,6 @@ In near future, i would like to add few things like:
 - Different - special Mobile look (again, little rebuild)
 - Working form to send e-mail direct to my priv one!
 - Add more projects (as soon as i'll make some)
-- At the end code cleaning (optimalization)
+- At the end code, cleaning (optimalization)
 
 Thanks for visiting!

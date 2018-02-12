@@ -862,34 +862,31 @@ body {
             display: flex;
             justify-content: center;
             width: 100%;
-            border: 1px dotted black;
+            //border: 1px dotted black;
 
             .Iam {
+              display: flex;
+              justify-content: center;
+              align-items: center;
               font: normal 1.5vw/40px 'Nunito Sans', sans-serif;
               color: #999;
-              border: 1px dotted white;
+              //border: 1px dotted white;
 
               p {
-                border: 1px dotted tomato;
+                //border: 1px dotted tomato;
                 height: 40px;
                 float: left;
                 margin-right: 0.3em;
               }
-              @media (min-width: 900px) {
-                p {
-                  height: 40px;
-                  float: left;
-                  margin-right: 0.3em;
-                }
-              }
+
+
 
               b {
-                border: 1px dotted green;
+                //border: 1px dotted green;
                 float: left;
                 overflow: hidden;
                 position: relative;
                 height: 40px;
-                top: 30px;
 
                 &:hover {
                   overflow: visible;

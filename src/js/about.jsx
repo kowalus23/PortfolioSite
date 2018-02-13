@@ -1,6 +1,4 @@
 import React from 'react';
-import {Router, Route, Link, IndexLink, IndexRoute, hashHistory} from 'react-router';
-
 
 
 export class About extends React.Component {
@@ -23,9 +21,7 @@ export class About extends React.Component {
                         programistyczne mnie bardzo absorbuje.</p>
                 </div>
                 <div className="return-btn">
-                    <Link to="/">
-                        <button><span>RETURN</span></button>
-                    </Link>
+                    <button onClick={this.goBack.bind(this)}><span>RETURN</span></button>
                 </div>
                 <div className="skills-about">
                     <div className="Iam">
@@ -39,10 +35,15 @@ export class About extends React.Component {
                                 <span>open for more <span>/</span> new as well!</span>
                             </div>
                         </b>
-
                     </div>
                 </div>
             </div>
         )
+    }
+
+    goBack() {
+        this.props.history.push({
+            pathname: "/"
+        });
     }
 }

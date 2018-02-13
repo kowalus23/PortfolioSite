@@ -12,17 +12,19 @@ export class Portfolio extends React.Component {
         return (
             <div className="portfolio">
                 <div className="portfolio-content-container">
-                    <div onClick={()=> window.open("./ProjektZaliczenie/index.html", "_self")} className="portfolio-content portfolio-first">
+                    <div onClick={() => window.open("./ProjektZaliczenie/index.html", "_self")}
+                         className="portfolio-content portfolio-first">
                         <img src={firstImage} alt=""/>
                         <h2>Project <span>1</span></h2>
                         <p>Website + Game</p>
                     </div>
-                    <div onClick={()=> window.open("./SitOnChair/index.html", "_self")} className="portfolio-content portfolio-second">
+                    <div onClick={() => window.open("./SitOnChair/index.html", "_self")}
+                         className="portfolio-content portfolio-second">
                         <img src={secondImage} alt=""/>
                         <h2>Project <span>2</span></h2>
                         <p>My first layout</p>
                     </div>
-                    <div onClick={()=> window.open("LINK3", "_self")} className="portfolio-content portfolio-third">
+                    <div onClick={() => window.open("LINK3", "_self")} className="portfolio-content portfolio-third">
                         <img src={thirdImage} alt=""/>
                         <h2>Project <span>3</span></h2>
                         <p>Example...</p>
@@ -59,12 +61,15 @@ export class Portfolio extends React.Component {
                     </div>
                 </div>
                 <div className="return-btn">
-                    <Link to="/">
-                        <button><span>RETURN</span></button>
-                    </Link>
+                    <button onClick={this.goBack.bind(this)}><span>RETURN</span></button>
                 </div>
-
             </div>
         );
+    }
+
+    goBack() {
+        this.props.history.push({
+            pathname: "/"
+        });
     }
 }

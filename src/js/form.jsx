@@ -41,13 +41,15 @@ export class Form extends React.Component {
                     </form>
                 </div>
                 <div className="return-btn">
-                    <Link to="/">
-                        <button><span>RETURN</span></button>
-                    </Link>
+                    <button onClick={this.goBack.bind(this)}><span>RETURN</span></button>
                 </div>
-
             </div>
 
         )
+    }
+    goBack() {
+        this.props.history.push({
+            pathname: "/"
+        });
     }
 }

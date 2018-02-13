@@ -1,5 +1,4 @@
 import React from 'react';
-import {Router, Route, Link, IndexLink, IndexRoute, hashHistory} from 'react-router';
 
 
 export class Menu extends React.Component {
@@ -9,13 +8,15 @@ export class Menu extends React.Component {
                 <div className="menu">
                     <div className="menu-col1">
                         <div>
-                            <Link to="/about"><button className="about-btn"><span>ABOUT</span></button></Link>
+                            <button className="about-btn" onClick={this.goToAbout.bind(this)}><span>ABOUT</span>
+                            </button>
                         </div>
                         <div>
-                            <Link to="/portfolio"><button className="projects-btn"><span>PROJECTS</span></button></Link>
+                            <button className="projects-btn" onClick={this.goToPortfolio.bind(this)}>
+                                <span>PROJECTS</span></button>
                         </div>
                         <div>
-                            <Link to="/form"><button className="ask-btn"><span>ASK ME</span></button></Link>
+                            <button className="ask-btn" onClick={this.goToAsk.bind(this)}><span>ASK ME</span></button>
                         </div>
                     </div>
                     <div className="menu-col2">
@@ -31,5 +32,23 @@ export class Menu extends React.Component {
                 </div>
             </div>
         )
+    }
+
+    goToAbout() {
+        this.props.history.push({
+            pathname: "/about"
+        });
+    }
+
+    goToPortfolio() {
+        this.props.history.push({
+            pathname: "/portfolio"
+        });
+    }
+
+    goToAsk() {
+        this.props.history.push({
+            pathname: "/form"
+        });
     }
 }

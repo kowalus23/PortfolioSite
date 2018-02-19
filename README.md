@@ -6,13 +6,13 @@
 
 ``` bash
 # install dependencies
-* Prefer to start "dev" instead... because i see that my compilation doesn't work with Switch router i've made.
 npm install
 
 # serve with hot reload at localhost:8000
 npm run dev
 
 # build for production with minification
+* Prefer to start "dev" instead... because i see that my compilation doesn't work with Switch router i've made.
 npm run start
 
 ```

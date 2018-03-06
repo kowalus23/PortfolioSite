@@ -68,9 +68,10 @@ $portfolioboxvisiblity: hidden;
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 20px 12px 10px 20px;
+    padding: 20px 18px 10px 20px;
     font: 1vw "Nunito Sans", sans-serif;
-    //border: 1px dotted tomato;
+    border: 1px solid #ff6d53;
+    border-radius: 4px;
 
     .form-style-sub {
       width: 100%;
@@ -1186,7 +1187,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            //border: 1px dotted blue;
+            //border: 1px dotted #555555;
             @include formContent;
           }
 

@@ -2,6 +2,8 @@ import React from 'react';
 import {Router, Route, Link, IndexLink, IndexRoute, hashHistory} from 'react-router';
 
 
+const extraStyle = {width: 1000 + 'px'}; // Doesnt work yet
+
 export class Form extends React.Component {
     render() {
         return (
@@ -35,7 +37,7 @@ export class Form extends React.Component {
                                           placeholder="Write text here..."/>
                             </li>
                             <li className="retardos">
-                                <input type="submit" value="Submit" className="retardos-child"/>
+                                <input type="submit" value="Submit" className="retardos-child" style={{extraStyle}}/>
                             </li>
                         </ul>
                     </form>

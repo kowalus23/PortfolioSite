@@ -22,7 +22,7 @@ export class Popup extends React.Component {
                                     <input type="email" name="field3" className="field-long"
                                            placeholder="example@test.pl"/>
                                 </li>
-                                <li>
+                                <li className="form-style-sub">
                                     <label>Subject</label>
                                     <select name="field4" className="field-select">
                                         <option value="Advertise">Offer / cooperation</option>

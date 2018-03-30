@@ -12,8 +12,10 @@ npm install
 npm run dev
 
 # build for production with minification
-* Prefer to start "dev" instead... because i see that my compilation doesn't work with Switch router i've made.
 npm run start
+
+* Prefer to start "dev" instead... because i see that my compilation doesn't work with Switch router i've made.
+* I've made also version with normal Router/Routes and Links (it works fine to get back even on browser arrows), Switches are kinda broken.
 
 ```
 

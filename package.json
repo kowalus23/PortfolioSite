@@ -32,7 +32,7 @@
     "webpack-dev-server": "^2.11.5"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "lodash.range": "^3.2.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-motion": "^0.5.2",
